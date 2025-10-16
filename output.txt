@@ -1,0 +1,10 @@
+--- SCANNER OUTPUT (FILE: output.txt) ---
++--------------------+---------------+
+| TOKEN TYPE         | TOKEN VALUE   |
++--------------------+---------------+
+| READ               | read          |
+| IDENTIFIER         | x             |
+| ASSIGN             | :=            |
+| NUMBER             | 4             |
+| SEMICOLON          | ;             |
++--------------------+---------------+
