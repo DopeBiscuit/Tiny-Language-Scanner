@@ -8,7 +8,7 @@
 
 
 typedef enum {
-    SEMICOLON, IF, THEN, END, REPEAT, UNTIL, IDENTIFIER, ASSIGN, READ, WRITE, LESSTHAN, EQUAL, PLUS, MINUS, MULT, DIV, OPENBRACKET, CLOSEDBRACKET, NUMBER, ERROR, ENDFILE
+    SEMICOLON, IF, ELSE, THEN, END, REPEAT, UNTIL, IDENTIFIER, ASSIGN, READ, WRITE, LESSTHAN, EQUAL, PLUS, MINUS, MULT, DIV, OPENBRACKET, CLOSEDBRACKET, NUMBER, ERROR, ENDFILE
 } TOKEN_TYPE;
 
 struct Token {
@@ -22,7 +22,7 @@ std::vector<Token> token_list;
 
 // NOTE: Added {"-", MINUS} explicitly for completeness.
 const std::map<std::string, TOKEN_TYPE> RESERVED_WORDS = {
-    {"if", IF}, {";", SEMICOLON}, {"then", THEN}, {"end", END}, {"repeat", REPEAT}, {"until", UNTIL}, {":=", ASSIGN}, {"read", READ}, {"write", WRITE}, {"<", LESSTHAN},
+    {"if", IF}, {"else", ELSE}, {";", SEMICOLON}, {"then", THEN}, {"end", END}, {"repeat", REPEAT}, {"until", UNTIL}, {":=", ASSIGN}, {"read", READ}, {"write", WRITE}, {"<", LESSTHAN},
     {"=", EQUAL}, {"+", PLUS}, {"-", MINUS}, {"*", MULT}, {"/", DIV}, {"(", OPENBRACKET}, {")", CLOSEDBRACKET}
 };
 

@@ -1,1 +1,7 @@
-read x := 4;
+if x < 5 then
+    read y;
+    y := y + 1;
+else
+    write x;
+    x := x - 2;
+end

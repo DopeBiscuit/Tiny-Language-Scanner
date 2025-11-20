@@ -2,9 +2,29 @@
 +--------------------+---------------+
 | TOKEN TYPE         | TOKEN VALUE   |
 +--------------------+---------------+
+| IF                 | if            |
+| IDENTIFIER         | x             |
+| LESSTHAN           | <             |
+| NUMBER             | 5             |
+| THEN               | then          |
 | READ               | read          |
+| IDENTIFIER         | y             |
+| SEMICOLON          | ;             |
+| IDENTIFIER         | y             |
+| ASSIGN             | :=            |
+| IDENTIFIER         | y             |
+| PLUS               | +             |
+| NUMBER             | 1             |
+| SEMICOLON          | ;             |
+| UNKNOWN_TYPE       | else          |
+| WRITE              | write         |
+| IDENTIFIER         | x             |
+| SEMICOLON          | ;             |
 | IDENTIFIER         | x             |
 | ASSIGN             | :=            |
-| NUMBER             | 4             |
+| IDENTIFIER         | x             |
+| MINUS              | -             |
+| NUMBER             | 2             |
 | SEMICOLON          | ;             |
+| END                | end           |
 +--------------------+---------------+
